@@ -1,0 +1,13 @@
+{
+    "login1": {
+        "url": "sso/weixin",
+        "request": {
+            "username": 18511789977,
+            "password": "qwerty"
+        },
+        "response": {
+            "resultcode": 0,
+            "message": "登录成功"
+        }
+    }
+}
