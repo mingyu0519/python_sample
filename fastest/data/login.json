@@ -1,0 +1,26 @@
+{
+    "login_test": {
+        "url": "login",
+        "method": "post",
+        "request": {
+            "username": 18511789977,
+            "password": "qwerty"
+        },
+        "check": {
+            "resultcode": 0,
+            "message": "登录成功"
+        }
+    },
+    "login1_test": {
+        "url": "hello",
+        "method": "get",
+        "request": {
+            "username": 18511789977,
+            "password": "qwerty"
+        },
+        "check": {
+            "resultcode": 0,
+            "message": "登录成功"
+        }
+    }
+}

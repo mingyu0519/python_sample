@@ -1,13 +1,15 @@
 # coding=utf-8
-import requests,json
+from sys import path,_getframe
+path.append(r"./util")
+import request_util
 
-# result = requests.get("http://localhost:8899/hello")
-#
-# print result.text
-# print result.json().get("foo")
+LOGIN_JSON = "data/login.json"
 
 def login_test():
-    assert 1==1
+    request_util.fasttest(LOGIN_JSON, _getframe().f_code.co_name)
 
-def login2_test():
-    assert 1==2
+def login1_test():
+    request_util.fasttest(LOGIN_JSON, _getframe().f_code.co_name)
+
+login_test()
+login1_test()
