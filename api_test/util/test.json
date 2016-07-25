@@ -1,0 +1,18 @@
+{
+    "a": {
+        "resultCode": 0,
+        "data": {
+            "source": "weixin",
+            "curTime": 1469083002088,
+            "targetUrl": "http%3A%2F%2Ftest.weixin.ufenqi.com%2Fpage%2Fuser%2Findex.html"
+        },
+        "bool": false,
+        "message": "我是"
+    },
+    "b": {
+        "resultCode": 0,
+        "source": "weixin",
+        "bool": false,
+        "message": "我是"
+    }
+}
