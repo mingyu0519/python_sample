@@ -9,6 +9,3 @@ def read(fileStr,attribute):
 def cycle(json):
     for a in json.keys():
         print json.get(a)
-
-# a = read("data/login.json","login1")
-# cycle(a)

@@ -1,0 +1,31 @@
+{
+    "test_login": {
+        "url": "sso/login/weixin",
+        "method": "post",
+        "request": {
+            "username": "18500096466",
+            "password": "qwe123",
+            "targetUrl": "http://test.weixin.ufenqi.com/page/user/index.html",
+            "curTime": "1468215576136",
+            "validateCode": ""
+        },
+        "check": {
+            "resultCode": 0,
+            "curTime":"1468215576136"
+        }
+    },
+    "test_login_password_error": {
+        "url": "sso/login/weixin",
+        "method": "post",
+        "request": {
+            "username": "18500096465",
+            "password": "qwe122",
+            "targetUrl": "http://test.weixin.ufenqi.com/page/user/index.html",
+            "curTime": "1468215576136",
+            "validateCode": ""
+        },
+        "check": {
+            "resultCode": 0
+        }
+    }
+}
