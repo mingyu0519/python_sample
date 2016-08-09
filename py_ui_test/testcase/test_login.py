@@ -9,7 +9,7 @@ PATH = lambda p: os.path.abspath(
 
 DRIVER = None;
 
-def initGlobal():
+def init():
     global DRIVER
     desired_caps = {}
     desired_caps['platformName'] = 'Android'
@@ -22,7 +22,8 @@ def clean():
     global DRIVER
     DRIVER.quit()
 
-@with_setup(initGlobal(),clean())
+@with_setup(init(),clean())
 def test_inapp():
-    print "in app"
+    global DRIVER
+    DRIVER.find_element_by_accessibility_id(1)
     assert 1==1
