@@ -12,6 +12,9 @@ def reverse2(str):
 	str = "".join(li)
 	return str
 
+def reverse3(str):
+	return str[::-1]
+
 initStr = 'abcdefghigklmnopqrstuvwxyz'
 
 print initStr
@@ -19,3 +22,5 @@ print initStr
 print reverse(initStr)
 
 print reverse2(initStr)
+
+print reverse3(initStr)
