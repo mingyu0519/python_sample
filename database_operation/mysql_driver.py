@@ -5,6 +5,8 @@ conn = mysql.connector.connect(user='root',password='',database='test',use_unico
 
 cursor = conn.cursor()
 
+cursor.execute("insert into myclass values (9,'aimi',1,23)")
+
 cursor.execute("select * from myclass")
 
 values = cursor.fetchall()
