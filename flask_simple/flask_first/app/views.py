@@ -24,3 +24,9 @@ def submit():
 	order_id = request.form.get('order')
 	time.sleep(3)
 	return render_template('result_base.html', order_id=order_id)
+
+@app.route('/test',methods=['GET','POST'])
+def test():
+	order_id = request.form.get('order')
+	time.sleep(3)
+	return '' + order_id
